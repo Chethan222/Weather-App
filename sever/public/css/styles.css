@@ -1,0 +1,210 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+      }
+      header {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.1)
+          ),
+          url("full.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      nav {
+        position:fixed;
+        width: 100%;
+        height: 12vh;
+        background: rgb(0, 0, 0, 0.35);
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+      }
+      nav .logo {
+        width: 25%;
+        text-align: center;
+      }
+      nav .menu {
+        width: 40%;
+        background: transparent;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      nav .menu a:first-child {
+        color: #1064c3;
+      }
+      nav .menu a {
+        text-decoration: none;
+        width: 25%;
+        color: #fff;
+        font-weight: bold;
+      }
+      main {
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section{
+        color: #fff;
+      }
+      section h3 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 200;
+        letter-spacing: 3px;
+        text-shadow: 1px 1px 2px black;
+      }
+      section h1 {
+        text-align: center;
+        margin: 30px 0 5px 0;
+        font-size: 55px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-shadow: 2px 1px 5px black;
+      }
+      section p {
+        text-align: center;
+        margin: 5px 0 30px 0;
+        font-size: 20px;
+        font-weight: 200;
+        letter-spacing: 3px;
+        text-shadow: 2px 1px 5px black;
+      }
+      section a {
+        margin: 0 2px 0 2px;
+        padding: 10px 20px;
+        font-size: 12px;
+        font-weight: 100;
+        text-decoration: none;
+        letter-spacing: 1px;
+        outline: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        transition: all 0.5s ease;
+      }
+      section .btn1 {
+        background: rgb(255, 255, 255);
+        color: #000;
+      }
+      section .btn2 {
+        background: #1064c3;
+        color: rgb(255, 255, 255);
+      }
+      section .btns {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+      .btn1:hover {
+        background: #1064c3;
+        color: rgb(255, 255, 255);
+      }
+      .btn2:hover {
+        background: rgb(255, 255, 255);
+        color: #000;
+      }
+
+      .changeContent:after {
+        content: ' know your atmosphere';
+        animation: changetext 5s infinite linear;
+        color: #1064c3;
+      }
+      @keyframes changetext {
+        25% {
+          content: " predict the future";
+        }
+        50% {
+          content: " get your weather data";
+        }
+        75% {
+          content: " know your atmosphere";
+        }
+      }
+
+.main{
+  font-weight: 100;
+  font-family: sans-serif;
+  position: relative;
+  color: #fff;
+  background:linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.1)
+          ),url("full.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+.getUpdate{
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+.container{
+  position: relative;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+.container h2 {
+  padding: 30px 0 0 0;
+  font-size: 50px;
+  text-align: center;
+  color: #1064c3;
+}
+.container .left{
+  display: flex;
+  float: right;
+  width: 70%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.container p{
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  padding: 20px;
+}
+.container .right{
+  
+  display: flex;
+  float: left;
+  width: 30%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.bottom{ 
+  display: flex;
+  border-radius: 1rem;
+  width: 100%;
+  font-size: 16px;
+  text-align: justify;
+  padding: 20px;
+  
+}
+.bottom p{
+  margin: 10px;
+}
+
+div .contents{
+  color: #fff;
+  text-align: justify;
+  padding: 30px 0 0 0;
+  
+}
+footer{
+  width: 100%;
+  height: 35vh;
+  background:rgb(2, 2, 31);
+  display: flex;
+  justify-content: space-evenly;
+}
+
