@@ -1,210 +1,490 @@
+/*
+green 
+1 : #00FF00
+2 : #16F529
+3 : #57E964
+
+*/
+
 * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        
-      }
-      header {
-        width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.1)
-          ),
-          url("full.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      nav {
-        position:fixed;
-        width: 100%;
-        height: 12vh;
-        background: rgb(0, 0, 0, 0.35);
-        color: #fff;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-transform: uppercase;
-      }
-      nav .logo {
-        width: 25%;
-        text-align: center;
-      }
-      nav .menu {
-        width: 40%;
-        background: transparent;
-        display: flex;
-        justify-content: space-evenly;
-      }
-      nav .menu a:first-child {
-        color: #1064c3;
-      }
-      nav .menu a {
-        text-decoration: none;
-        width: 25%;
-        color: #fff;
-        font-weight: bold;
-      }
-      main {
-        width: 100%;
-        height: 85vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      section{
-        color: #fff;
-      }
-      section h3 {
-        text-align: center;
-        font-size: 30px;
-        font-weight: 200;
-        letter-spacing: 3px;
-        text-shadow: 1px 1px 2px black;
-      }
-      section h1 {
-        text-align: center;
-        margin: 30px 0 5px 0;
-        font-size: 55px;
-        font-weight: 700;
-        letter-spacing: 3px;
-        text-shadow: 2px 1px 5px black;
-      }
-      section p {
-        text-align: center;
-        margin: 5px 0 30px 0;
-        font-size: 20px;
-        font-weight: 200;
-        letter-spacing: 3px;
-        text-shadow: 2px 1px 5px black;
-      }
-      section a {
-        margin: 0 2px 0 2px;
-        padding: 10px 20px;
-        font-size: 12px;
-        font-weight: 100;
-        text-decoration: none;
-        letter-spacing: 1px;
-        outline: none;
-        border-radius: 5px;
-        text-transform: uppercase;
-        transition: all 0.5s ease;
-      }
-      section .btn1 {
-        background: rgb(255, 255, 255);
-        color: #000;
-      }
-      section .btn2 {
-        background: #1064c3;
-        color: rgb(255, 255, 255);
-      }
-      section .btns {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-      }
-      .btn1:hover {
-        background: #1064c3;
-        color: rgb(255, 255, 255);
-      }
-      .btn2:hover {
-        background: rgb(255, 255, 255);
-        color: #000;
-      }
-
-      .changeContent:after {
-        content: ' know your atmosphere';
-        animation: changetext 5s infinite linear;
-        color: #1064c3;
-      }
-      @keyframes changetext {
-        25% {
-          content: " predict the future";
-        }
-        50% {
-          content: " get your weather data";
-        }
-        75% {
-          content: " know your atmosphere";
-        }
-      }
-
-.main{
-  font-weight: 100;
-  font-family: sans-serif;
-  position: relative;
-  color: #fff;
-  background:linear-gradient(
-            rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.1)
-          ),url("full.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: block;
-  letter-spacing: 1px;
-  line-height: 22px;
-}
-.getUpdate{
-  position: absolute;
-  top: 20px;
-  right: 40px;
-}
-.container{
-  position: relative;
-  color: #fff;
-  width: 100%;
-  box-sizing: border-box;
-}
-.container h2 {
-  padding: 30px 0 0 0;
-  font-size: 50px;
-  text-align: center;
-  color: #1064c3;
-}
-.container .left{
-  display: flex;
-  float: right;
-  width: 70%;
-  box-sizing: border-box;
-  padding: 20px;
-}
-.container p{
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 1rem;
-  padding: 20px;
-}
-.container .right{
-  
-  display: flex;
-  float: left;
-  width: 30%;
-  box-sizing: border-box;
-  padding: 20px;
-}
-.bottom{ 
-  display: flex;
-  border-radius: 1rem;
-  width: 100%;
-  font-size: 16px;
-  text-align: justify;
-  padding: 20px;
-  
-}
-.bottom p{
-  margin: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-div .contents{
-  color: #fff;
-  text-align: justify;
-  padding: 30px 0 0 0;
-  
-}
-footer{
-  width: 100%;
-  height: 35vh;
-  background:rgb(2, 2, 31);
-  display: flex;
-  justify-content: space-evenly;
+body {
+    font-family: "Roboto", sans-serif;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    /* border-top: 10px solid rgb(2, 138, 58); */
+    border-bottom: 5px solid rgb(2, 138, 58);
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12vh;
+    background: rgba(0, 255, 0, 0.8);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    z-index: 999;
+}
+
+nav .logo {
+    width: 25%;
+    text-align: center;
+}
+
+nav .menu {
+    width: 40%;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav .menu a:first-child {
+    color: #000000;
+}
+
+nav .menu a {
+    font-size: 18px;
+    text-decoration: none;
+    width: 25%;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    padding: 30px;
+    padding-top: 56px;
+}
+
+.hero-box h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+
+.hero-box h1 {
+    text-align: center;
+    margin: 10px 0 5px 0;
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.hero-box p {
+    text-align: center;
+    margin: 5px 0 30px 0;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+
+.hero-box a {
+    margin: 0 2px 0 2px;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 100;
+    text-decoration: none;
+    letter-spacing: 1px;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.hero-box .btn1 {
+    font-weight: 400;
+    background: rgb(255, 255, 255);
+    color: #000;
+}
+
+.hero-box .btn2 {
+    font-weight: 400;
+    background: #00ff00;
+    color: rgb(255, 255, 255);
+}
+
+.hero-box .btns {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn1:hover {
+    background: #00ff00;
+    color: rgb(255, 255, 255);
+}
+
+.btn2:hover {
+    background: rgb(255, 255, 255);
+    color: #000;
+}
+
+.changeContent:after {
+    content: " know your atmosphere";
+    animation: changetext 5s infinite linear;
+    color: #00ff00;
+}
+
+.result-text {
+    color: #000000;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+
+/******************************** Section-1 **************************************/
+
+.section-1-weatherdata {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1-weatherdata input {
+    padding: 12px;
+    margin: 2px;
+    letter-spacing: 1.2px;
+}
+
+.section-1-weatherdata button {
+    padding: 12px;
+    letter-spacing: 1.2px;
+    background-color: #585353;
+    box-shadow: none;
+    border: none;
+    margin: 2px;
+    color: rgb(248, 248, 248);
+}
+
+@keyframes changetext {
+    25% {
+        content: " predict the future";
+    }
+    50% {
+        content: " get your weather data";
+    }
+    75% {
+        content: " know your atmosphere";
+    }
+}
+
+.main {
+    font-weight: 100;
+    font-family: sans-serif;
+    position: relative;
+    color: rgb(151, 21, 21);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("full.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.getUpdate {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+
+/******************************** Section-2 ********************************/
+
+.main-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.main-text-box h1 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+}
+
+.main-text-box p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.main-text-box a,
+.main-text-box a:link {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: rgba(0, 255, 0, 0.8);
+    color: white;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    letter-spacing: 1px;
+    border-radius: 50px;
+}
+
+.company-main-img img {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+
+/******************************** Section-3 ********************************/
+
+.company-description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.company-description h2 {
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+}
+
+.company-description-boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    padding: 15px;
+}
+
+.company-description-boxes h3 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.company-description-boxes p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.section-4-image-box {
+    margin-right: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/******************************** Section-4 ********************************/
+
+.section-4-testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-4-testimonials h2 {
+    font-weight: 600;
+}
+
+.section-4-testimonials blockquote {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.section-4 img {
+    width: auto;
+    height: 300px;
+}
+
+.section-4-img-box {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/******************************** Section-5 ********************************/
+
+.section-5-products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-5-products h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+}
+
+.section-5 .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    gap: 10px;
+    position: relative;
+    padding: 10px;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin-left: 0;
+    border-radius: 20px;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+}
+
+.card ul li {
+    list-style: none;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.card a,
+.card a:link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 15px;
+    background-color: rgba(0, 255, 0, 0.8);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    box-shadow: 3px 13px 20px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: 200;
+}
+
+
+/* ============================== Section-6 ======================================*/
+
+.section-6-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-6-contents h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.more-contents {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.content-1,
+.content-2 {
+    flex: 0 0 60%;
+}
+
+.more-contents .env-img img {
+    display: block;
+    margin: auto auto;
+    width: 100%;
+    height: auto;
+}
+
+.more-contents p {
+    text-align: justify;
+    line-height: 25px;
+}
+
+
+/* ============================== Footer ======================================*/
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 50px 5px 10px 5px;
+    background: rgba(0, 255, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer .links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links {
+    text-align: center;
+}
+
+.links li {
+    list-style: none;
+    text-align: start;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.links li a {
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-copyright {
+    color: #ffffff;
+    justify-self: flex-end;
+}
+
+.footer-copyright p {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}

@@ -1,0 +1,51 @@
+.row {
+    display: flex;
+}
+
+.span-1-of-2 {
+    flex: 0 1 50%;
+}
+
+.span-1-of-3 {
+    flex: 0 1 33.33%;
+}
+
+.span-2-of-3 {
+    flex: 0 1 66.66%;
+}
+
+.span-1-of-4 {
+    flex: 0 1 25%;
+}
+
+.span-2-of-4 {
+    flex: 0 1 50%;
+}
+
+.span-3-of-4 {
+    flex: 0 1 75%;
+}
+
+.grid {
+    display: grid;
+}
+
+.col-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.col-8 {
+    grid-template-columns: repeat(8, 1fr);
+}

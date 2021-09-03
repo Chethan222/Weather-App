@@ -1,100 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Get weather of your location just with in seconds</title>
-    {{>head}}
-  </head>
-  <body>
-      {{>navbar}}
-      <header>
-        <main>
-          <section>
-            <h3>{{title}}</h3>
-            <h1>Where you can<span class="changeContent"></span></h1>
-            <p>"Future for tech"</p>
-            <div class="btns">
-              <a href="#" class="btn1">Learn More</a>
-              <a href="#" class="btn2">Join Us</a>
-            </div>
-          </section>
-        </main>
-      </header>
 
-      <div class="main">
-        <p class="getUpdate">June 21,2021</p>
-        <div class="container">
-          <div class="title">
-            <h2>Description</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get weather of your location just with in seconds</title>
+  {{>head}}
+  <script src="/js/app.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    {{>navbar}}
+    <header>
+      <main>
+        <div class="hero-box">
+          <h3>{{title}}</h3>
+          <h1>Where you can<span class="changeContent"></span></h1>
+          <p>"Future for tech"</p>
+          <div class="btns">
+            <a href="#" class="btn1">Learn More</a>
+            <a href="#" class="btn2">Join Us</a>
           </div>
-          <div class="container left">
-            <div class="mid">
-              <div class="contents">
-                <p>
-                  <br /><br />Lorem Ipsum is simply
-                  dummy text of the printing and typesetting industry. Lorem
-                  Ipsum has been the industry's standard dummy text ever since
-                  the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book. It has survived not
-                  only five centuries, but also the leap into electronic
-                  typesetting, remaining essentially unchanged. It was
-                  popularised in the 1960s with the release of Letraset sheets
-                  containing Lorem Ipsum passages, and more recently with
-                  desktop publishing software like Aldus PageMaker including
-                  versions of Lorem Ipsum.
-                </p>
-                <br />
-                <br />
-                <br />
-                <p>
-                  Why do we use it? It is a long established fact that a reader
-                  will be distracted by the readable content of a page when
-                  looking at its layout. The point of using Lorem Ipsum is that
-                  it has a more-or-less normal distribution of letters, as
-                  opposed to using 'Content here, content here', making it look
-                  like readable English. Many desktop publishing packages and
-                  web page editors now use Lorem Ipsum as their default model
-                  text, and a search for 'lorem ipsum' will uncover many web
-                  sites still in their infancy. Various versions have evolved
-                  over the years, sometimes by accident, sometimes on purpose
-                  (injected humour and the like). Where does it come from?
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text.
-                </p>
-                <br />
-                <br />
-                <br />
-              </div>
+        </div>
+      </main>
+    </header>
+    <section class="section-1">
+      <div class=" section-1-weatherdata">
+        <p id="result" class="result-text"></p>
+        <form id="weather-form">
+          <input type="text" placeholder="Location" id="address-input-box">
+          <button class="btn" id="search-btn">Get Weather</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section-2">
+      <div class="company-main grid col-2">
+        <div class="main-text-box">
+          <h1>We design and build better chairs , for a better life</h1>
+          <P class="main-description">Lorem ipsum dolor sit amet, consectet Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Minus aliquam ducimus molestias veritatis officiis laudantium sequi soluta facere, nostrum
+            rerum iusto eum aliquid quas tempore enim esse
+            deleniti incidunt quos!</P>
+          <a href="/ ">Shop chairs</a>
+        </div>
+        <div class="company-main-img"><img src="/images/side-img.jpg " alt="Chairs.jpg "></div>
+
+      </div>
+    </section>
+    <section class="section-3">
+      <div class="company-description">
+        <div class="second-title">
+          <h2>What is special in us?</h2>
+        </div>
+        <div class="company-description-boxes">
+          <div>
+            <h3>Science meets design </h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod qui tenetur non ex quam nostrum. Neque,
+              quasi id quis debitis placeat velit, reiciendis rem, quaerat eum numquam qui sint odit.</p>
+          </div>
+          <div>
+            <h3>Science meets design </h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod qui tenetur non ex quam nostrum. Neque,
+              quasi id quis debitis placeat velit, reiciendis rem, quaerat eum numquam qui sint odit.</p>
+          </div>
+          <div>
+            <h3>Science meets design </h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod qui tenetur non ex quam nostrum. Neque,
+              quasi id quis debitis placeat velit, reiciendis rem, quaerat eum numquam qui sint odit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-4">
+      <div class="grid col-2">
+        <div class="section-4-img-box">
+          <img src="/images/" alt="Comfortable-Chairs.jpg ">
+        </div>
+        <div class="section-4-testimonials">
+          <h2>"We couldn 't live without these chairs anymore"</h2>
+          <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illo labore accusamus,
+            nihil excepturi doloribus quaerat id ut impedit temporibus quidem voluptas illum possimus incidunt minima a
+            quo corrupti error!</blockquote>
+        </div>
+      </div>
+    </section>
+    <section class="section-5">
+      <div class="section-5-products">
+        <h1> Our best selling chairs</h1>
+        <div class="items">
+          <div>
+            <div class="card"><img src="/images/rainy.jpg" alt="Big-Chairs.jpg">
+              <p>The Rainy Weather</p>
+              <ul>
+                <li>Leisure and relaxing</li>
+                <li>Vag Leather</li>
+                <li>Weight 20kg</li>
+                <li>₹1000</li>
+              </ul>
+              <a href="/">Add to cart</a>
             </div>
           </div>
-          <div class="container right"></div>
+          <div>
+
+            <div class="card">
+              <img src="/images/some.jpg" alt="Big-Chairs.jpg">
+              <p>The Cloudy Weather</p>
+              <ul>
+                <li>Leisure and relaxing</li>
+                <li>Vag Leather</li>
+                <li>Weight 20kg</li>
+                <li>₹1000</li>
+              </ul>
+              <a href="/">Add to cart</a>
+            </div>
+
+          </div>
+          <div>
+            <div class="card"><img src="/images/sunny.jpg" alt="Big-Chairs.jpg">
+              <p>The Sunny Weather</p>
+              <ul>
+                <li>Leisure and relaxing</li>
+                <li>Vag Leather</li>
+                <li>Weight 20kg</li>
+                <li>₹1000</li>
+              </ul>
+              <a href="/">Add to cart</a>
+            </div>
+          </div>
+
         </div>
-        <div class="container bottom">
-          <p>
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur
+
+      </div>
+    </section>
+    <section class="section-6">
+      <div class="section-6-contents">
+        <div class="section-6-title">
+          <h2>Description</h2>
+        </div>
+        <div class="more-contents ">
+          <p class="content-1">
+          Lorem Ipsum is simply
+            dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. It was
+            popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with
+            desktop publishing software like Aldus PageMaker including
+            versions of Lorem Ipsum.
           </p>
-          <br />
-          <br />
-          <br />
-          <p>
-            This book is a treatise on the theory of ethics, very popular during
-            the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor
-            sit amet..", comes from a line in section 1.10.32. The standard
-            chunk of Lorem Ipsum used since the 1500s is reproduced below for
-            those interested.
+          <div class="env-img"><img src="/images/1.jpg" alt="pro.jpg"></div>
+        </div>
+        <div class="more-contents">
+          <div class="env-img"><img src="/images/2.jpg" alt="pro.jpg"></div>
+          <p class="content-2">
+            Why do we use it? It is a long established fact that a reader
+            will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem Ipsum is that
+            it has a more-or-less normal distribution of letters, as
+            opposed to using 'Content here, content here', making it look
+            like readable English. Many desktop publishing packages and
+            web page editors now use Lorem Ipsum as their default model
+            text, and a search for 'lorem ipsum' will uncover many web
+            sites still in their infancy. Various versions have evolved
+            over the years, sometimes by accident, sometimes on purpose
+            (injected humour and the like). Where does it come from?
+            Contrary to popular belief, Lorem Ipsum is not simply random
+            text.
           </p>
         </div>
       </div>
-      <footer>
-        <div class="footerele"><h1>ed,wjwd</h1></div>
-        <div class="footerele"><h1>ed,wjwd</h1></div>
-        <div class="footerele"><h1>ed,wjwd</h1></div>
-      </footer>
-    </div>
-  </body>
+    </section>
+    {{>footer}}
+  </div>
+
+</body>
+
 </html>
